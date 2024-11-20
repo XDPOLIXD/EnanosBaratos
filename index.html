@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/pellizco.png" type="image/x-icon">
+    <title>Tienda de Enanos</title>
+</head>
+
+<body>
+    <!-- Contenido principal -->
+    <div id="content" class="content">
+        <header>
+            <h1>Mi Tienda de Enanos</h1>
+            <div class="cart">
+                <button id="cartBtn" aria-label="Ver el carrito de compras">Ver Carrito (0)</button>
+            </div>
+        </header>
+
+        <section class="products">
+            <!-- Producto 1 -->
+            <div class="product" data-id="1">
+                <img src="./img/enano bostero.jpeg" alt="Camiseta Básica">
+                <h3>Enano Bostero</h3>
+                <p>$500</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product" data-id="2">
+                <img src="./img/enanobasquet.jpeg" alt="Jeans Ajustados">
+                <h3>Enano Deportista</h3>
+                <p>$750</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product" data-id="3">
+                <img src="./img/enanofacha.png" alt="Chaqueta de Cuero">
+                <h3>Enano Fachero</h3>
+                <p>$900</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product" data-id="4">
+                <img src="./img/enanopatin.jpg" alt="Vestido Elegante">
+                <h3>Enano Patin</h3>
+                <p>$200</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product" data-id="5">
+                <img src="./img/enanostriper.webp" alt="Zapatos Deportivos">
+                <h3>Enano Bailarin</h3>
+                <p>$650</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product" data-id="6">
+                <img src="./img/enanotriciclo.jpg" alt="Suéter de Lana">
+                <h3>Enano Extremo</h3>
+                <p>$1000</p>
+                <button class="add-to-cart" type="button">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <div id="cart" class="cart-modal hidden">
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems">
+                <!-- Los productos agregados aparecerán aquí -->
+            </ul>
+            <button id="checkoutBtn" type="button">Ver Producto Final</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Enanos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./javaScript/app.js"></script>
+</body>
+
+</html>
