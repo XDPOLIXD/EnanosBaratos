@@ -161,3 +161,11 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+}
+
