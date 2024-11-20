@@ -37,8 +37,10 @@ header {
 header h1 {
     margin: 0;
     font-weight: 300;
-    text-align: center; /* Centra el texto horizontalmente */
-    width: 100%; /* Asegura que el h1 ocupe el ancho completo */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    width: 100%;
+    /* Asegura que el h1 ocupe el ancho completo */
 }
 
 /* Botón del carrito */
@@ -66,7 +68,8 @@ header h1 {
     padding: 20px;
     max-width: 100%;
     overflow: hidden;
-    margin-top: 200px; /* Ajusta el valor según lo necesites */
+    margin-top: 200px;
+    /* Ajusta el valor según lo necesites */
 }
 
 
@@ -87,10 +90,14 @@ header h1 {
 
 /* Estilo de las imágenes dentro de los productos */
 .product img {
-    width: 102%;         /* La imagen ocupará todo el ancho disponible del contenedor */
-    height: 633px;       /* Fija una altura específica para todas las imágenes */
-    object-fit: cover;   /* Asegura que las imágenes se recorten proporcionalmente si es necesario */
-    border-radius: 5px;  /* Bordes redondeados opcionales */
+    width: 102%;
+    /* La imagen ocupará todo el ancho disponible del contenedor */
+    height: 633px;
+    /* Fija una altura específica para todas las imágenes */
+    object-fit: cover;
+    /* Asegura que las imágenes se recorten proporcionalmente si es necesario */
+    border-radius: 5px;
+    /* Bordes redondeados opcionales */
 }
 
 
@@ -162,10 +169,69 @@ footer p {
     margin: 0;
 }
 
+/* Media Queries para pantallas pequeñas */
+
 @media (max-width: 768px) {
+
+    /* Ajustar la rejilla de productos a una columna */
     .products {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 40px;
     }
+
+    /* Reducción del tamaño del texto en el header */
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* Ajuste del botón del carrito */
+    .cart button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-left: 0;
+        /* Eliminar el margen izquierdo */
+    }
+
+    /* Ajuste de las imágenes en los productos */
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar el tamaño de los textos en los productos */
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 16px;
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 15px;
+        font-size: 12px;
+    }
 }
 
+@media (max-width: 480px) {
+
+    /* Para dispositivos más pequeños como el Samsung A54 */
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .cart button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .product h3 {
+        font-size: 16px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+}
