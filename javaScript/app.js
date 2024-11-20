@@ -24,17 +24,22 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
             price: parseFloat(productPrice)
         };
 
+        console.log('Producto agregado:', product); // Para verificar que el producto se agregue correctamente
+
         // Agregar el producto al carrito
         cart.push(product);
         updateCartCount();
     });
 });
 
+
 // Ver carrito
 cartButton.addEventListener('click', function () {
+    console.log('Abriendo/cerrando el carrito');
     cartModal.classList.toggle('hidden');
     displayCart();
 });
+
 
 // Mostrar productos en el carrito
 function displayCart() {
